@@ -97,7 +97,7 @@ resource "aws_instance" "web-1" {
   tags = {
     Name       = "Prod-Server"
     Env        = "Prod"
-    Owner      = "sai"
+    Owner      = "Bala"
     CostCenter = "ABCD"
   }
 }
