@@ -100,7 +100,10 @@ resource "aws_instance" "web-1" {
     Owner      = "Bala"
     CostCenter = "ABCD"
   }
+#  lifecycle {
+#    create_before_destroy = true
+#  }
   lifecycle {
-    create_before_destroy = true
+    prevent_destroy = true
   }
 }
